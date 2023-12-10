@@ -1,0 +1,177 @@
+@media screen and (max-width: 320px) {
+    body {
+        width: 320;
+        height: 640;
+        background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-recruitment-computer-programmer-programming-poster-picture-image_1120467.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: aliceblue;
+    }
+    a {
+        color: aliceblue;
+    }
+
+    /*  index grid responsive */
+
+    .contenedor-index {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 160px 1fr 160px;
+        justify-content: center;
+    }
+    .index-header, .masInformacion-header, .sobreMi-header, .proyectos-header, .contactar-header{
+        font-size: 70%;
+        grid-area: header;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .index-section {
+        font-size: 100%;
+        text-justify: center;
+        grid-area: section;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+    .index-img {
+        display: none;
+    }
+    .index-footer {
+        font-size: 100%;
+        grid-area: footer;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10%;
+    }
+
+    /* mas informacion grid responsive */
+
+    .contenedor-masInformacion {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "section";
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px 1fr;
+        justify-content: center;
+    }
+    .masInformacion-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .masInformacion-section {
+        font-size: 100%;
+        grid-area: section;
+        display: flex;
+        justify-self: start;
+        align-self: start;
+        line-height: 16vh;
+        justify-self: center;
+    }
+    .masInformacion-img {
+        display: none;
+    } 
+
+    /* Sobre mi grid responsive */
+
+    .contenedor-sobreMi {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header img"
+        "section section"
+        "footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 160px 1fr 29%;
+        justify-content: center;
+    }
+    .sobreMi-header{
+        display: block;
+        justify-self: center;
+    }
+    .sobreMi-section {
+        font-size: 100%;
+        grid-area: section;
+        display: flex;
+        align-items: center;
+        justify-items: start;
+    }
+    .sobreMi-img {
+        width: 160px;
+        height: 100%;
+        padding: 4px 4px 0px 0px;
+        grid-area: img;
+        display: flex;
+        justify-content: end;
+   }
+
+   /* grid proyectos*/
+
+    .contenedor-proyectos {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "galeria";
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 75%;
+        justify-content: center;
+    }
+    .proyectos-header {
+        display: flex;
+        justify-items: center;
+    }
+    .proyectos-galeria {
+        grid-area: galeria;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+        gap: 10px;
+        border: solid 4px ;
+        border-radius: 10px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+    /* grid contactar*/
+
+    .contenedor-contactar {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% auto 15%;
+    }
+    .contactar-header {
+        grid-area: header;
+        display: block;
+        justify-self: center;
+    }
+    .contactar-section {
+        grid-area: section;
+        display: flex;
+    }
+    .contactar-img {
+        display: none;
+    }
+    .contactar-footer {
+        grid-area: footer;
+        font-size: 50%;
+        border: none;
+        display: block;
+        
+    }
+   }
+
+
+   
